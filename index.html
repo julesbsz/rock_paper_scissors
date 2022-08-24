@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rock Paper Scissors</title>
+
+		<!-- Meta Tags -->
+		<meta name="title" content="Rock, Paper, Scissors" />
+		<meta name="description" content="A simple rock paper scissors website against your computer." />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Links & Scripts -->
+		<link rel="stylesheet" href="main.css" />
+		<script defer src="app.js"></script>
+	</head>
+	<body>
+		<button id="reset">
+			<img draggable="false" src="img/refresh.svg" alt="" />
+			Reset
+		</button>
+
+		<div class="counter">
+			<h1 class="score"><span>You</span> <span class="numbers">0 : 0</span> <span>Bot</span></h1>
+			<button id="save">Save my score</button>
+		</div>
+
+		<div class="actions">
+			<button class="sign" id="rock" data-sign="rock">
+				<img draggable="false" src="img/rock.png" alt="" />
+			</button>
+
+			<button class="sign" id="paper" data-sign="paper">
+				<img draggable="false" src="img/paper.png" alt="" />
+			</button>
+			<button class="sign" id="scissors" data-sign="scissors">
+				<img draggable="false" src="img/scissors.png" alt="" />
+			</button>
+		</div>
+
+		<div class="text">
+			<h2 class="status">&nbsp;</h2>
+			<h2 class="winner">&nbsp;</h2>
+		</div>
+
+		<footer>
+			<a href="https://julesbousrez.fr">www.julesbousrez.fr</a>
+		</footer>
+	</body>
+</html>

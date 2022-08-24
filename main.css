@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	color: #0c1254;
+	font-family: Poppins;
+	width: 100vw;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+/* reset btn */
+
+#reset {
+	position: absolute;
+	top: 30px;
+	right: 40px;
+	background: white;
+	color: #0c1254;
+	text-transform: uppercase;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+#reset > img {
+	transition: all 0.3s;
+}
+
+#reset:hover > img {
+	transform: rotate(90deg);
+}
+
+/* counter section */
+
+.counter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.score span {
+	font-size: 20px;
+}
+
+.score .numbers {
+	font-size: 100px;
+}
+
+.counter button {
+	height: 60px;
+	width: 180px;
+	border-radius: 15px;
+	font-size: 18px;
+	background-color: #0c1254;
+	border: #0c1254 3px solid;
+	color: white;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.counter button:hover {
+	background-color: white;
+	color: #0c1254;
+}
+
+.counter button:disabled:hover {
+	background-color: #0c125494;
+	color: white;
+	cursor: not-allowed;
+}
+
+/* sign btns */
+
+.actions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+.actions button {
+	height: 250px;
+	width: 250px;
+	background-color: white;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0px 0px 74px rgba(0, 0, 0, 0.07);
+	transition: all 0.3s;
+}
+
+.actions button:hover {
+	background-color: #30303012;
+	cursor: pointer;
+}
+
+.actions button img {
+	width: 50%;
+	height: 50%;
+}
+
+/* status txt */
+
+.status {
+	font-size: 60px;
+}
+
+/* text div */
+
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* footer section */
+
+footer a {
+	position: absolute;
+	color: rgba(128, 128, 128, 0.556);
+	font-style: italic;
+	bottom: 10px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 13px;
+}
+
+@media (max-width: 850px) {
+	.actions {
+		gap: 20px;
+		padding: 0 20px;
+	}
+
+	.actions button {
+		width: 25vw;
+		height: 25vw;
+	}
+
+	#save {
+		font-size: 15px;
+		height: 50px;
+		width: 150px;
+	}
+
+	#reset {
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	.score .numbers {
+		font-size: 90px;
+	}
+
+	.status {
+		font-size: 50px;
+	}
+
+	.winner {
+		font-size: 20px;
+	}
+}
